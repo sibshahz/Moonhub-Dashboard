@@ -1,11 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #5F2EE5;
+  --secondary-bg:#F3F4F6;
+  --gray-bg:#F5F5F5;
+}
+@font-face {
+  font-family: 'Silka-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Silka-Regular'), url('../public/fonts/Silka-Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Silka-Regular-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Silka-Regular-Italic'), url('../public/fonts/Silka-RegularItalic.woff') format('woff');
+  }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Silka-Regular', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
