@@ -1,6 +1,9 @@
 .listController{
     margin-bottom: 16px;
 }
+.resultDetails{
+    text-align: left;
+}
 .resultDetails .icon{
     width: 32px;
     display: inline-block;
@@ -26,4 +29,40 @@
     line-height: 32px;
     vertical-align: top;
     margin-left: 12px;
+}
+.resultController{
+    text-align: right;
+}
+.resultController .selectAll{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    text-align: center;
+
+    /* Purple */
+
+    color: #5F2EE5;
+
+    border-radius: 2px;
+}
+.resultController .btnIcons{
+    color: white;
+    /* width: 126px; */
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 38px;
+    background:#5F2EE5;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    -webkit-border-radius:4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
 }
