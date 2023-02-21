@@ -31,7 +31,7 @@ function CandidateItem() {
             </div>
         </div>
         <div className='showMore'>
-            <a href='#'>Show more <RightOutlined /></a>
+            <a href='github.com/sibshahz'>Show more <RightOutlined /></a>
         </div>
 
     </div>
