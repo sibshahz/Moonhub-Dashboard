@@ -4,7 +4,7 @@ import { Avatar } from 'antd';
 import {DownOutlined} from '@ant-design/icons';
 function UserPanel() {
   return (
-    <div className='userPanel flex'>
+    <div className='userPanel flex flex-wrap shrink'>
         <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={'large'} className="mr-3" />
         <div className='userInfo mr-3'>
             <h3 className='userTitle'>Esther Howard</h3>
