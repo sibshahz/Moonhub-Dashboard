@@ -1,11 +1,24 @@
 import React,{useState} from 'react'
 import './input-collapser.styles.css'
 import {DownOutlined,UpOutlined} from '@ant-design/icons';
+import { motion, useAnimationControls } from "framer-motion"
 
 
 function InputCollapser({children, title,down}) {
+    const controls = useAnimationControls();
+
     const [open, setOpen] = useState(down);
+
+
     const toggleArrow=()=>{
+        if(open){
+            controls.start({ scaleY: 1,display:"block" })
+            
+        }else{
+            controls.start({scaleY: 0,display:"none"})
+
+
+        }
         setOpen(!open)
     };
   return (
@@ -17,7 +30,8 @@ function InputCollapser({children, title,down}) {
                 {open ? <UpOutlined style={{ color:'#AEAEAE' }}/> : <DownOutlined style={{ color:'#AEAEAE' }}/> }
             </span>
         </div>
-        {open ? <div className='mt-3 children'>{children}</div> : null}
+        <motion.div animate={controls} className='mt-3 children'>{children}</motion.div>
+
     </div>
   )
 }

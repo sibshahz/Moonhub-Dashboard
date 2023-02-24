@@ -23,3 +23,41 @@
 .arrow:hover{
     cursor: pointer;
 }
+.close{
+    animation-name: slideup;
+    animation-duration:2s;
+    
+}
+
+.open{
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+.children{
+}
+@keyframes slidein {
+    from {
+      /* margin-left: 100%; */
+      height: -2px;
+
+    }
+  
+    to {
+      /* margin-left: 0%; */
+
+      height: auto;
+    }
+  }
+
+  @keyframes slideup {
+    from {
+
+      /* margin-left: 0%; */
+      height: auto;
+    }
+  
+    to {
+        /* margin-left: 100%; */
+        height: -2px;
+    }
+  }
